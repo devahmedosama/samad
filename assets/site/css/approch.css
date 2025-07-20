@@ -1,0 +1,338 @@
+* {
+  /* margin: 0;
+  padding: 0;
+  box-sizing: border-box; */
+}
+body{
+   transition: background-color 0.5s, color 0.5s; /* انتقال سلس للألوان */
+}
+/* the section  */
+.sectionheaderAproach {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2em 0 2rem;
+  /* background: rgb(105, 155, 131); */
+}
+.headerAproachFlex{
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+
+.top-text {
+  font-size: 20px;
+  font-weight: 600;
+  max-width: 600px;
+  line-height: 1.6;
+  margin-bottom: 4rem;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.4s;
+}
+._apprTyping{
+  /* font-size: 120px; */
+  /* color: black; */
+  padding-top: 50px;
+  position: relative;
+ font-size: 120px;
+     --tw-tracking: -.04em;
+    letter-spacing: -.04em;
+}
+.big-heading {
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.8s;
+  color: #000;
+  
+}
+.big-subheading {
+  font-family: 'myfont-kattan';
+  color: #0aedc1;
+  font-weight: 400;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 1.2s;
+      /* --tw-tracking: -.04em;
+    letter-spacing: -.04em; */
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 0;
+  right: 2rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #000;
+}
+.rotate-vertical-text {
+  position: absolute;
+  top: 31%;
+  right: 30px;
+  transform: rotate(90deg) translateY(-50%);
+  transform-origin: right center;
+  font-size: 22px;
+  font-weight: 600;
+  color: rgb(17, 17, 17);
+}
+.rotate-vertical-text i{
+  font-weight: 400;
+}
+
+.headerAproachFlex .sh-sm{
+  display: none;
+  font-size: 19px;
+  font-weight: 600;
+  color: rgb(17, 17, 17);
+  margin-bottom: 22px;
+    }
+/* the tab buttons */
+
+.fixed-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0.5rem;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  align-items: center;
+  animation-delay: 0.6s; 
+}
+
+.btnFixedBar {
+  background: white;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 0.2rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border:none;
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 5px;
+margin-right: 5px ;
+   animation-delay: 0.3s;
+transition: 0.3s;
+}
+.btnFixedBar span,
+.consult-btn span{
+  display: block;
+  overflow: hidden;
+  animation-delay: 0.3s;
+  transition: 0.3s;
+}
+.btnFixedBar .showData {
+  opacity: 1;
+  transform: translateY(50%);
+  color:  #000 !important;
+}
+.btnFixedBar:hover .showData,
+.btnFixedBar:active .showData{
+  transform: translateY(-100%);
+  opacity: 0;  
+}
+.btnFixedBar .hiddData {
+transform: translateY(133%);
+font-family: "myfont-kattan";
+}
+
+.btnFixedBar:hover .hiddData,
+.btnFixedBar:active .hiddData{
+transform: translateY(-10px);
+  opacity: 1;
+}
+.btnFixedBar:hover,
+.btnFixedBar.active {
+  color: #0aedc1;
+  animation-delay: 0.3s;
+}
+.consult-btn {
+  border: 1px solid black;
+  padding: 0.6rem 1.4rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  align-items: center;
+  background: white;
+  color:  #000 !important;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+/* .consult-btn */
+.div-data1{
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  overflow: hidden;
+}
+.div-data2{
+  width: 50%;
+  background: rgb(255, 255, 255);
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow: hidden;
+}
+.div-data2 .btnFixedBar{ 
+width: fit-content;
+padding-left: 20px;
+padding-right: 20px;
+overflow: hidden;
+}
+.div-data2 .consult-btn{ 
+width: fit-content;
+height: 45px;
+}
+.consult-btn .showData {
+  opacity: 1;
+  transform: translateY(0);
+}
+.consult-btn:hover .showData,
+.consult-btn:active .showData{
+  transform: translateY(-100%);
+  opacity: 0;
+}
+.consult-btn .hiddData {
+  transform: translateY(133%);
+  opacity: 0;
+}
+.fixedBarHidden{
+  display: none;
+}
+.consult-btn:hover .hiddData,
+.consult-btn:active .hiddData{
+  transform: translateY(-100%);
+  opacity: 1;
+}
+
+.btnFixedBar:hover,
+.btnFixedBar.active {
+  color: #0aedc1;
+}
+.consult-btn:hover {
+  background: #f0f0f0;
+}
+.intro-call:hover {
+  color: #aaa;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#wit-calar{
+  background-color: #f5f5f5;
+}
+@media(max-width:850px){
+  .div-data2{
+    width: 100%;
+  }
+.div-data1 {
+  display: none;
+}
+}
+
+ .approachWrappSticky {
+    /* width: 100%;
+    height: 100vh;
+    padding-left: 15px;
+    padding-right: 15px; */
+  }
+.approachStickyRight{
+  width: 100%;
+  padding: 50px 15px ;
+  /* height: 100vh; */
+  overflow: hidden;
+}
+  .approchStickyLeft {
+    position: sticky;
+    top: 100px;
+    flex-shrink: 0;
+    width: 100%;
+    z-index: 10;
+  }
+
+
+/* bootstrap accordion style */
+/* new style 15 / 7 */
+._wePrice{
+  padding-top: 150px;
+  /* background: #909090; */
+}
+._wePrice h1{
+  font-size: 25px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+._stickyDiv{
+  /* background: red; */
+  margin-bottom: 20px;
+}
+/* end 15 / 7 */
+
+
+.secAcord1 .collapse{
+    visibility: visible;
+}
+.secAcord1 .accordion-button::after{
+  display: none;
+}
+.secAcord1 .accordion-button:not(.collapsed),
+ .secAcord1 .accordion-button{
+    background-color: transparent;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    box-shadow: none !important;
+    outline: none;
+}
+.secAcord1 .accordion-item{
+   background: transparent; 
+    border-width: 1px;
+    border-style: solid;
+    border-color: #909090 transparent #909090 transparent;
+    border-radius: none !important;
+}
+.secAcord1 .accordion-button .t1 a{
+font-size: 20px;
+color: white;
+outline: none;
+}
+.art-approach{
+    margin: 6em auto;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+ 
+}

@@ -1,0 +1,16 @@
+
+@font-face {
+    font-family: 'DonattoFont';
+    src: url('../fonts/Fonts/Donatto-font-2/Donatto-Italic.otf') format('otf'),
+    url('../fonts/Fonts/Donatto-font-2/Donatto-Italic.ttf') format('ttf'),
+    url('../fonts/Fonts/Donatto-font-2/Donatto-Regular.otf') format('otf'),
+    url('../fonts/Fonts/Donatto-font-2/Donatto-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+/* decoration font */
+@font-face {
+  font-family: 'myfont-kattan';
+  src: url(../fonts/kaftan-trial.otf);
+  font-style: normal;
+}
