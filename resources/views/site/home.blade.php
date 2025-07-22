@@ -42,7 +42,12 @@
           <div class="textHeader">
             
             <h1 class="hero-main-title">{{ $page1->sub_title }}</h1>
-           
+             <h2 class="hero-sub-title">
+              <p class="hero-ny ">
+                <span class="hero-style"> From</span> 
+                <span class="hero-style">Atlanta</span> 
+              </p>
+            </h2>
             <!-- <div class="hero_lineHeader"> -->
               
             <p class="hero-desc">
