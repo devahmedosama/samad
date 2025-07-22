@@ -1,31 +1,59 @@
-/.phpunit.cache
-/node_modules
-/build
-/hot
-/storage
-/storage/*.key
-/vendor
-.env
-.env.backup
-.env.production
+# Laravel
+/vendor/
+/.env
+.env.*
 .phpunit.result.cache
-Homestead.json
 Homestead.yaml
-auth.json
-esc.sql
+Homestead.json
+
+# Laravel storage (except .gitkeep)
+storage/
+!storage/*.gitkeep
+
+# Laravel specific folders to ignore
+/storage/logs/
+/storage/framework/cache/
+/storage/framework/sessions/
+/storage/framework/views/
+/storage/framework/testing/
+/storage/debugbar/
+
+# Uploads and media
+/uploads/
+!/uploads/.gitkeep
+
+# Node
+/node_modules/
 npm-debug.log
 yarn-error.log
-/.fleet
-/.idea
-/.vscode
-# Ignore personal/OS/system folders and SSH
-.cache/
-.config/
-.local/
-.ssh/
-__MACOSX/
-uploads/
 
-# Ignore user shell history files
-.bash_history
-.bash_logout
+# IDEs and editors
+/.idea/
+/.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Mac system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+
+# Others
+*.swp
+*.swo
+
+# Git itself
+.gitignore
+
+# Build or database files (optional)
+build/
+hot/
+*.sql
+*.sqlite
+*.sqlite3
+
+# Optional if used
+.fleet/
+.phpunit.cache
