@@ -1,4 +1,6 @@
 @import url('../css/fonts.css');
+/* @import url('../css/code.css'); */
+
 
 /* ./ custom fonts  */
 
@@ -36,6 +38,7 @@ body {
   overflow-x: hidden;
   max-width: 100%;
   width: 100%;
+  height: 100%;
   /* font-weight: 500; */
   font-size: 100%;
   font-family: "DonattoFont";
@@ -186,13 +189,19 @@ header {
   height: auto;
   padding: 17px 20px;
   border-radius: 50px;
-  border: 1px solid white;
+  border: 1px solid #000;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
    --tw-duration: .3s;
     transition-duration: .3s;
+}
+._tabHome{
+  border: 1px solid #fff !important;
+}
+._tabHome .link_show{
+  color: #fff;
 }
 .navbar .row ._tab:hover {
   border: 1px solid #3c3b3b
@@ -235,18 +244,18 @@ nav {
   /* flex-grow: 5; flex-shrink: 1; flex-basis: 0%; */
 }
 .logo {
-  /* font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: none;
-  color: white;
-  opacity: 0.7;
-  z-index: 2;
-  position: relative; */
   width: 100px;
   overflow: hidden;
 }
 nav .logoLg{
-  z-index: 1000;
+  z-index: 99999;
+}
+.nav_item .logo{
+    z-index: 99999;
+}
+
+    .mobile-menu-header{
+    padding: 2.5rem 0.5rem 0 0.5rem !important;
 }
 nav .logo img{
   width: 100%;
@@ -2642,7 +2651,7 @@ p._bold {
 
 /* footer style */
 footer {
-  background: linear-gradient(to right, #159982, #c4bbda);
+  background: linear-gradient(to right, #000, #1a1a1a);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -2651,8 +2660,6 @@ footer {
   /* text-align: center; */
   overflow: hidden;
   position: relative;
-  padding-right: 20px;
-  padding-left: 20px;
   padding-top: 10em;
   /* padding-bottom: 3em; */
 }
@@ -2665,7 +2672,7 @@ footer {
   bottom: 0;
   left: 0;
   /* z-index: -1; */
-  background: linear-gradient(23deg, #c4bbda, #16ecc2 13.78%, #4353ff00 37.68%);
+  background: linear-gradient(23deg, #3bcbeb, #4353ff 13.78%, #4353ff00 37.68%);
 }
 /* footer animit css */
 .footerAnimitionText{
@@ -2775,7 +2782,8 @@ display: inline-block;
 }
 .footerMenuBottom {
   text-align: left;
-  padding-left: 0px;
+  padding-left: 2em;
+  padding-right: 2em;
   padding-bottom: 3em;
   position: relative;
 }
@@ -2849,11 +2857,14 @@ display: inline-block;
 } 
 #menuGBT {
   padding: 10px;
-  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  /* font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif; */
   margin: auto;
   display: none;
   transform-style: display 0.5s;
   position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   z-index: 10;
 }
@@ -2862,14 +2873,14 @@ display: inline-block;
 /* my dropdown style */
 .dropdownF {
     position: relative;
-    width: 106%;
+    width: 100%;
     padding-top: 3em;
     padding-right: 4em;
     padding-left: 2em;
     z-index: 150;
     background-color: black;
     position: absolute;
-    left: -2%;
+    left: 0;
     right: 0;
     bottom: 0;
     height: 200px;
@@ -2923,7 +2934,7 @@ display: inline-block;
         --tw-duration: .3s;
     transition-duration: .3s;
 }
-
+footer .ppf .fourBtn {}
 .ppf .fourBtn ._fli {
     color: white;
     padding: 0px 19px;
@@ -2933,10 +2944,26 @@ display: inline-block;
     margin-right: 10px;
     display: inline-block;
     overflow: hidden;
-        --tw-duration: .3s;
+    --tw-duration: .3s;
     transition-duration: .3s;
+    position: relative;
 }
+@media(max-width: 768px){
+  footer .dropdownF{
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .ppf .fourBtn ._fli{
+    padding: 0 10px;
+    font-size: 13px;
+    margin-right: 6px;
+  }
+  .fItemBtn{
+    text-align: center;
+  }
+  /*  end footer media */
 
+}
 /* ........................................ */
 
 .footerMenuBottom li {
@@ -2953,7 +2980,8 @@ display: inline-block;
   margin: auto;
   position: absolute;
   bottom: 0;
-  left: 0;
+  /* left: 0; */
+  padding-left: 2em;
 }
 
 .progress-bar {
@@ -2997,7 +3025,7 @@ display: inline-block;
   font-family: "Georgia", serif; /* Change the font for emphasis */
 }
 .footerItemMenu {
-  padding-left: 0px;
+  padding-left: 2em;
 }
 .footerItemMenu li {
   color: #fff;
@@ -3436,7 +3464,7 @@ footer .footerTimer {
   margin: 0;
 }
 .menu-button .menu-text {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #161515;
   padding-bottom: 2px;
   display: inline-block;
   background: none !important;
@@ -3487,8 +3515,11 @@ footer .footerTimer {
   position: relative;
   min-width: 70px;
   min-height: 28px;
+  color: #000;
 }
-
+.menuColor{
+  /* color: #fff; */
+}
 
 .scroll-float {
   overflow: hidden;

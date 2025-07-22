@@ -1,8 +1,8 @@
 /.phpunit.cache
 /node_modules
-/public/build
-/public/hot
-/public/storage
+/build
+/hot
+/storage
 /storage/*.key
 /vendor
 .env
@@ -12,11 +12,20 @@
 Homestead.json
 Homestead.yaml
 auth.json
+esc.sql
 npm-debug.log
 yarn-error.log
 /.fleet
 /.idea
 /.vscode
-Archive.zip
-Archive.zip
-Archive.zip
+# Ignore personal/OS/system folders and SSH
+.cache/
+.config/
+.local/
+.ssh/
+__MACOSX/
+uploads/
+
+# Ignore user shell history files
+.bash_history
+.bash_logout
