@@ -7,7 +7,7 @@
               @if (Request::is('/'))
                   <img src="{{ URL::to('assets/site') }}/images/Logo Byte.svg" alt="logo" id="logoimg">
               @else
-                 <img src="{{ URL::to('assets/site') }}/images/Logo Byte - Black.svg" alt="logo"> 
+                 <img src="{{ URL::to('assets/site') }}/images/Logo Byte - Black.svg" alt="logo" id="{{ Request::is('approach')?'appLogo':' ' }}"> 
               @endif
               
               <!-- <img src="{{ URL::to('assets/site') }}/images/Logo Byte - Black.svg" alt="logo"> -->

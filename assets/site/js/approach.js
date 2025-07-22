@@ -17,28 +17,31 @@ buttons.forEach(button => {
 
   window.addEventListener('scroll', function() {
         const scrollY = window.scrollY; // مقدار التمرير العمودي
+        const logoIImg = document.getElementById('appLogo');
+
+        const imglSrc = 'assets/images/Logo Byte.svg';
+        const newSsrc = 'assets/images/Logo Byte - Black.svg';
         
+
         if (scrollY >= 300 && scrollY < 2000) {
             // تغيير اللون عند التمرير 100 بكسل
             document.body.style.backgroundColor = 'black';
             document.body.style.color = 'white';
-            document.querySelectorAll('.mainWrapperAcord2').forEach(function(el) {
-                el.classList.remove('now_black');
-                });
+            logoIImg.src = imglSrc;
         } else if (scrollY >= 2000) {
             // تغيير اللون عند التمرير 500 بكسل
             document.body.style.backgroundColor = 'white';
             document.body.style.color = 'black';
-            document.querySelectorAll('.mainWrapperAcord2').forEach(function(el) {
-                el.classList.add('now_black');
-                });
-
+            logoIImg.src = newSsrc;
         } else {
             // إعادة الألوان إلى الوضع الافتراضي
             document.body.style.backgroundColor = 'white';
             document.body.style.color = 'black';
+            logoIImg.src = newSsrc;
         }
     });
+
+
 
     // hidden and show fixed bar 
     function hideElementOnFooterScroll() {
@@ -60,4 +63,3 @@ buttons.forEach(button => {
     // استدعاء الدالة
     hideElementOnFooterScroll();
     
-
