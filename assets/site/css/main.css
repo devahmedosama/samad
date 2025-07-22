@@ -2651,7 +2651,8 @@ p._bold {
 
 /* footer style */
 footer {
-  background: linear-gradient(to right, #000, #1a1a1a);
+  background: linear-gradient(50deg, #2fdebf, #9cb4b9, #0aedc1), #000;
+  /* background: linear-gradient(to right, #000, #1a1a1a); */
   display: flex;
   flex-direction: column;
   justify-content: space-between;

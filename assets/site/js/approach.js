@@ -22,10 +22,17 @@ buttons.forEach(button => {
             // تغيير اللون عند التمرير 100 بكسل
             document.body.style.backgroundColor = 'black';
             document.body.style.color = 'white';
+            document.querySelectorAll('.mainWrapperAcord2').forEach(function(el) {
+                el.classList.remove('now_black');
+                });
         } else if (scrollY >= 2000) {
             // تغيير اللون عند التمرير 500 بكسل
             document.body.style.backgroundColor = 'white';
             document.body.style.color = 'black';
+            document.querySelectorAll('.mainWrapperAcord2').forEach(function(el) {
+                el.classList.add('now_black');
+                });
+
         } else {
             // إعادة الألوان إلى الوضع الافتراضي
             document.body.style.backgroundColor = 'white';

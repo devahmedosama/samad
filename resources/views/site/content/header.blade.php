@@ -31,8 +31,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
     <!--  -->
-    <link rel="stylesheet" href="{{ URL::to('assets/site') }}/css/main.css?v=1.01" />
-    <link rel="stylesheet" href="{{ URL::to('assets/site') }}/css/media.css?v=1.01">
+    <link rel="stylesheet" href="{{ URL::to('assets/site') }}/css/main.css" />
+    <link rel="stylesheet" href="{{ URL::to('assets/site') }}/css/media.css">
     <link rel="stylesheet" href="{{ URL::to('assets/site') }}/css/animation.css">
 
     

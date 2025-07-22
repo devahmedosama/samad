@@ -192,7 +192,7 @@ font-size: 14px;
   /* .animateScroll20 media */
   .big_wrapper_section .animateScroll20{
     min-block-size: 60vh;
-    place-content: flex-start !important;
+    place-content: center
     /* background: red; */
   }
   ._animateWrapper .animateScroll20{
@@ -204,6 +204,7 @@ font-size: 14px;
   }
   .animateScroll20 .tag-listScroull li {
     font-size: 3.5em;
+    color: #ffffff !important;
 }
 ._animateWrapper .tsome{
     text-align: left !important;
@@ -250,7 +251,7 @@ font-size: 14px;
     font-size: 30px;
 }
 .animateScroll20 .tag-listScroull li {
-    font-size: 3.5em;
+    /* font-size: 3.5em; */
 }
 .priceSection{
     height: 35vh !important;
