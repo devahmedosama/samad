@@ -18,7 +18,7 @@
       <!-- dropdown -->
       <div class="col col_expertise">
         <div class="nav_item {{ isset($black)?'balck':'' }}">
-            <div class="_tab">
+            <div class="_tab {{ Request::is('/')?'_tabHome':'' }}">
               <a  class="link_show" 
                   >Expertise
               <i
