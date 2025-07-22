@@ -3588,6 +3588,7 @@ footer .footerTimer {
   font-size: 1.125rem;
   background-color: var(--clr-primary-800);
   overflow: hidden;
+  color: #fff;
 }
 
 .animateScroll20 .tag-listScroull {
