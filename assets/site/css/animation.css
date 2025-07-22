@@ -229,7 +229,7 @@
   height: 100%;
   top: 10px;
   display: flex;
-  align-items: center;
+  align-items: self-start;
 }
 /* end my style */
 .price-title, .approach-title {

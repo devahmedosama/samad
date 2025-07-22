@@ -50,7 +50,7 @@
       <ul class="footerMenuBottom">
         <li><a href="#">Privacy</a></li>
         <li><a href="#">Terms</a></li>
-        <li>BOWEN® © MMXXV</li>
+        <li>BYTE® © 2025</li>
       </ul>
 
       <div class="dropdownfooterToggel">
