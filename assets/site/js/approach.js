@@ -19,8 +19,8 @@ buttons.forEach(button => {
         const scrollY = window.scrollY; // مقدار التمرير العمودي
         const logoIImg = document.getElementById('appLogo');
 
-        const imglSrc = 'assets/images/Logo Byte.svg';
-        const newSsrc = 'assets/images/Logo Byte - Black.svg';
+        const imglSrc = 'assets/site/images/Logo Byte.svg';
+        const newSsrc = 'assets/site/images/Logo Byte - Black.svg';
         
 
         if (scrollY >= 300 && scrollY < 2000) {

@@ -350,7 +350,7 @@
       </div>
 @endsection
 @section('scripts')
-      <script src="{{ URL::to('assets/site') }}/js/approach.js?v=1.01"></script>
+      <script src="{{ URL::to('assets/site') }}/js/approach.js?v=1.02"></script>
       <script src="{{ URL::to('assets/site') }}/js/script.js"></script>
       <script src="{{ URL::to('assets/site') }}/js/footerAnimation.js"></script>
       <script src="{{ URL::to('assets/site') }}/js/animitionScrolling.js"></script>
