@@ -1130,8 +1130,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // change logo img
   const logoImg = document.getElementById('logoimg');
-        const originalSrc = 'assets/images/Logo Byte.svg';
-        const newSrc = 'assets/images/Logo Byte - Black.svg';
+        const originalSrc = 'assets/site/images/Logo Byte.svg';
+        const newSrc = 'assets/site/images/Logo Byte - Black.svg';
         
         window.addEventListener('scroll', () => {
             if (window.scrollY > 600) {
