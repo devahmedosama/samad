@@ -1,6 +1,9 @@
 window.addEventListener("load", () => {
   ScrollTrigger.refresh();
 });
+
+// load function مسؤلة عن تحميل كود الجافاسكريبت بشكل صحيح 
+
 // Scroll bar
 let el = document.querySelector(".scroller");
 if (el) {
@@ -554,35 +557,33 @@ function splitTextToWords(element) {
 Array.from(document.querySelectorAll('.scroll-float')).forEach(el => splitTextToWords(el));
 
 // الجملة الأولى: تدور للأعلى وتختفي (rotationX: 90)
-if (document.querySelectorAll('.price-title .word').length) {
-    gsap.fromTo(
-    '.price-title .word',
-    {
-      opacity: 1,
-      y: 0,
-      rotationX: 0,
-      transformOrigin: '50% 100%',
-    },
-    {
-      opacity: 0,
-      y: -80,
-      rotationX: 80,
-      transformOrigin: '50% 100%',
-      stagger: { each: 0.05, from: 'end' },
-      ease: 'cubic.inOut',
-      duration: 0.5,
-      scrollTrigger: {
-        trigger: '.priceSection',
-        start: 'top center',
-        end: '+=500',
-        scrub: true,
-      }
+gsap.fromTo(
+  '.price-title .word',
+  {
+    opacity: 1,
+    y: 0,
+    rotationX: 0,
+    transformOrigin: '50% 100%',
+  },
+  {
+    opacity: 0,
+    y: -80,
+    rotationX: 80,
+    transformOrigin: '50% 100%',
+    stagger: { each: 0.05, from: 'end' },
+    ease: 'cubic.inOut',
+    duration: 0.5,
+    scrollTrigger: {
+      trigger: '.priceSection',
+      start: 'top center',
+      end: '+=500',
+      scrub: true,
     }
-  );
-}
+  }
+);
 
-if (document.querySelectorAll('.approach-title .word').length){
-    gsap.fromTo(
+// الجملة الثانية: تظهر من الأسفل وتدور للأمام (rotationX: -90 → 0)
+gsap.fromTo(
   '.approach-title .word',
   {
     opacity: 0,
@@ -606,9 +607,6 @@ if (document.querySelectorAll('.approach-title .word').length){
     }
   }
 );
-}
-// الجملة الثانية: تظهر من الأسفل وتدور للأمام (rotationX: -90 → 0)
-
 
 // ===== Scroll Velocity Marquee Effect =====
 (function() {
@@ -1132,8 +1130,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // change logo img
   const logoImg = document.getElementById('logoimg');
-        const originalSrc = 'assets/site/images/Logo Byte.svg';
-        const newSrc = 'assets/site/images/Logo Byte - Black.svg';
+        const originalSrc = 'assets/images/Logo Byte.svg';
+        const newSrc = 'assets/images/Logo Byte - Black.svg';
         
         window.addEventListener('scroll', () => {
             if (window.scrollY > 600) {
