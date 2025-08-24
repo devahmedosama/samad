@@ -8,7 +8,7 @@
 @endsection
 @extends('site.content.layout')
 @section('content')
-    <body class="">
+    <body id="agyncyPage">
         <div class="header-agency">
             @include('site.content.menu')
         </div>

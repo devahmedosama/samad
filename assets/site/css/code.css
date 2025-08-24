@@ -1,0 +1,68 @@
+.featImg img{
+    object-fit: cover;
+}
+#agencyPage .heroWrapper_section{
+    background: #f4f4f4;
+}
+.tenacity_section .s1{
+    right: -6%;
+    top: 24%;
+}
+.svgImg{
+    height: 100%;
+    text-align: center;
+    padding: 10px;
+}
+.svgImg svg{
+    width: 66%;
+}
+.textMore, .textLine1{
+    overflow: hidden;
+}
+.fastestLGSccrean{
+    overflow: hidden;
+}
+.amImg{
+    height: 555px;
+}
+.footerItemTop span{
+    margin-bottom: 1em;
+}
+.footerAnimitionTextlist li span{
+    font-size: 6em;
+}
+
+@media (max-width: 1727px) {
+.featImg img{
+    object-fit: cover;
+}
+#agencyPage .heroWrapper_section{
+    background: #f4f4f4;
+}
+.tenacity_section .s1{
+    right: -6%;
+    top: 24%;
+}
+.footerItemTop span{
+    margin-bottom: 1em;
+}
+.footerAnimitionTextlist li span{
+    font-size: 6em;
+}
+.agency-c-title {
+        display: block;
+    }
+}
+@media (max-width: 850px) {
+    .agency-sm-title {
+        display: none;
+    }
+    .agency-c-title {
+        right: -19.5%;    
+    }
+    .agency-section .agency-header-title {
+        text-align: left;
+    }
+
+
+}

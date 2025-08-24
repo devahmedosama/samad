@@ -216,7 +216,7 @@
   position: relative;
   align-items: center;
   display: flex;
-  height: 85vh;
+  height: 85lvh;
   justify-content: center;
   overflow-x: hidden;
   perspective: 1200px;
@@ -224,13 +224,18 @@
 }
 /* my style */
 .priceSectionSticky{
-  /* background: rgba(255, 0, 0, 0.158); */
-  position: sticky;
   height: 100%;
-  top: 10px;
   display: flex;
-  align-items: self-start;
+  align-items: start;
+  /* padding-top: 6vw; */
 }
+/* @media (min-width: 768px) and (max-width: 992px){
+.priceSectionSticky{
+    align-items: center;
+    padding-top: inherit;
+}
+
+  } */
 /* end my style */
 .price-title, .approach-title {
   display: flex;
@@ -269,11 +274,16 @@
 /* textSection style */
 .textSection {
   text-align: center;
-  padding: 3em 0;
-  font-size: 20px;
+  padding-top: 5vw;
+  /* width: 100%; */
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;
+  /* font-size: 20px; */
 }
 .textSection p {
   font-size: 24px;
+  /* font-size: 1.6vw; */
   /* letter-spacing: -0.4em; */
   line-height: 150%;
   font-weight: 700;

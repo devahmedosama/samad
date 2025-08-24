@@ -45,6 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
         start: "top top",
         end: () => "+=" + videosSection.offsetHeight,
         scrub: true,
+        // pin: true,
       },
     });
 
@@ -57,6 +58,8 @@ document.addEventListener("DOMContentLoaded", function () {
         start: "top top",
         end: () => "+=" + swiperMobileSection.offsetHeight,
         scrub: true,
+        // pin: true, // تثبيت السويبر
+        // pinSpacing: false, // إزالة المسافة بين السيكشن المثبت والسويبر
       },
     });
   } else {
@@ -64,62 +67,33 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+// mobile effect swiper section
 
 
 // zoom effect img header 
-document.addEventListener("DOMContentLoaded", function () {
-    window.addEventListener("scroll", function () {
-        const sections = document.querySelectorAll(".zoom_effect");
-        const windowHeight = window.innerHeight;
-        const windowTop = window.scrollY;
+gsap.registerPlugin(ScrollTrigger);
 
-        sections.forEach(function (section) {
-            const sectionTop = section.getBoundingClientRect().top + windowTop;
-            const sectionHeight = section.offsetHeight;
-
-            const isVisible =
-                sectionTop < windowTop + windowHeight &&
-                sectionTop + sectionHeight > windowTop;
-
-            if (isVisible) {
-                const scrollPercent =
-                    (windowTop + windowHeight - sectionTop) /
-                    (windowHeight + sectionHeight);
-
-                // نطاق التكبير: 0.1 إلى 1.5
-                const scale = Math.min(0.1 + scrollPercent * 1.4, 1.5);
-
-                section.style.transform = "scale(" + scale + ")";
-            } else if (windowTop + windowHeight < sectionTop) {
-                // إعادة تعيين إلى مقياس صغير فقط عندما يكون القسم فوق الشاشة
-                section.style.transform = "scale(0.1)";
-            }
-            // إذا كان القسم أسفل الشاشة - لا شيء (احتفظ بأخر مقياس لتجنب الوميض)
-        });
-    });
+ScrollTrigger.defaults({
+  // Defaults are used by all ScrollTriggers
+  toggleActions: "restart pause resume pause", // Scoll effect Forward, Leave, Back, Back Leave
+  // markers: true
+   // Easaly remove markers for production 
 });
 
+const timelineHeader = gsap.timeline({
+  scrollTrigger: {
+    class: ".header-agency", // Custom label to the marker
+    trigger: "#header-zoom", // What element triggers the scroll
+    scrub: 0.5, // Add a small delay of scrolling and animation. `true` is direct
+    start: "top top", // Start at top of Trigger and at the top of the viewport
+    end: "+=100% 50px", // The element is 500px hight and end 50px from the top of the viewport
+		pin: true, // Pin the element true or false
+  }
+});
 
-// // video animiate scrolling playr
-// document.addEventListener("DOMContentLoaded", function () {
-//     const video = document.getElementById("scrollVideo");
-//     const section = document.querySelector(".video_effect");
-//     const targetDuration = 5; // seconds
+timelineHeader
+  .to(".zoom_effect", {
+    scale: 3
+  });
 
-//     video.addEventListener("loadedmetadata", function () {
-//         const actualDuration = Math.min(video.duration, targetDuration);
-
-//         window.addEventListener("scroll", function () {
-//             const scrollTop = window.scrollY;
-//             const sectionTop = section.getBoundingClientRect().top + window.scrollY;
-//             const sectionHeight = section.offsetHeight;
-
-//             if (scrollTop >= sectionTop && scrollTop <= sectionTop + sectionHeight) {
-//                 const scrollProgress = (scrollTop - sectionTop) / sectionHeight;
-//                 const currentTime = scrollProgress * actualDuration;
-//                 video.currentTime = currentTime;
-//             }
-//         });
-//     });
-// });
 

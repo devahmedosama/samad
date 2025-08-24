@@ -1,62 +1,24 @@
-
 .featured-section .row {
     display: flex;
     flex-wrap: wrap;
     margin: -15px; /* لتوفير المسافة بين الصور */
  
   }
-  /* global class */
-/* .p-r-top{
-    position: relative;
-    top: -3em;
-} */
-  /* global class */
-  .featured-section .faet_body {
-    padding: 20px;
-    /*  المسافة بين الصور */
+  #workPage .featured-section .faet_body {
+    padding: 20px 0;
     flex: 1 1 calc(50% - 30px); /* عرض كل صورة 50% مع المسافة */
     box-sizing: border-box;
     margin-bottom: 15px;
   }
-  
   @media (max-width: 768px) {
     .featured-section .faet_body {
       flex: 1 1 calc(100% - 30px); /* عرض كل صورة 100% على الشاشات الصغيرة */
     }
   }
-
-
-
-.p-work{
-  /* clip-path: inset(-5%);  */
-    /* transform: none; */
-    /* font-family: var(--inter-font); */
-    /* --tw-leading: 150%; */
-    /* --tw-font-weight: 700; */
-    /* font-size: 26px; */
-    /* line-height: 150%; */
-    /* font-weight: 700; */
-    /* --tw-tracking: -.04em; */
-    /* letter-spacing: -.04em; */
-}
-
-   Reset and base
-   body, html {
-    /* margin: 0;
-    padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #f7f7f7;
-    color: #000;
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; */
-  }
   .mainheaderWork{
     width: 100%;
     margin: 50px auto;
-        padding: 80px 30px 0px;
-
+    padding: 80px 30px 0px;
   }
   .headerWork {
     width: 100%;
@@ -64,8 +26,7 @@
   /* margin-top: 80px; */
     justify-content: space-between;
     align-items: stretch;
-    border-bottom: 1px solid #d1d1d1;
-    
+    border-bottom: 1px solid #d1d1d1;    
   }
 .headerWork article{
   text-align: right;
@@ -73,8 +34,6 @@
 }
 .headerWork article p{
   width: 80%;
-  /* background: #2952e3; */
-    /* font-family: var(--inter-font); */
     --tw-leading: 150%;
     --tw-font-weight: 700;
     font-size: 26px;
@@ -82,13 +41,10 @@
     font-weight: 700;
     --tw-tracking: -.04em;
     letter-spacing: -.04em;
-
-
 }
    /* Left side: large heading */
    .left {
     width: 50%;
-    /* flex: 0 0 40%; */
   }
   .left h1 {
     margin: 0;
@@ -96,21 +52,17 @@
     font-size: 3.5rem;
     line-height: 1.1;
     letter-spacing: -0.03em;
-    /* font-family: 'Arial Black', Arial, sans-serif; */
   }
   .left h2 {
     margin: 0;
     font-weight: 300;
     font-size: 2.8rem;
-    /* font-family: 'Didot', 'Times New Roman', serif; */
     font-style: normal;
     letter-spacing: 0.02em;
     color: #000;
     padding-top: 8px;
   }
-
-
-    /* Right side: paragraph content */
+/* Right side: paragraph content */
     .right {
       width: 50%;
     }
@@ -125,11 +77,9 @@
     /* Bottom navigation style */
     .bottom-nav {
       margin-top: 40px;
-      /* font-weight: 700; */
       font-size: 1rem;
       user-select: none;
     }
-
     .bottom-nav {
       display: flex;
       justify-content: flex-end;
@@ -138,11 +88,8 @@
       gap: 10px;
       font-weight: 700;
       font-size: 20px;
-        border-bottom: 1px solid #eee;
-    
+      border-bottom: 1px solid #eee;
     }
-
-
     .bottom-nav .active {
       color: #000;
     }
@@ -153,41 +100,31 @@
        /* font-weight: 400;  */
        margin-left:10px; 
     }
-
-
-
-
-   @media (max-width: 1050px){
-    .headerWork {
+@media (max-width: 1050px){
+  .headerWork {
       display: block;
     }
-      .headerWork article{
-  text-align: left;
-  text-align: -webkit-left;
-}
-.headerWork article p{
-          font-size: 20px;
-        margin-top: 20px;
+  .headerWork article{
+    text-align: left;
+    text-align: -webkit-left;
+  }
+  .headerWork article p{
+    font-size: 20px;
+    margin-top: 20px;
 }
 .headerWork .left,
 .headerWork .right{
   width: 100%;
 }
-
-
-    }
-
-
+}
         /* Responsive adjustments */
         @media (max-width: 900px) {
           .headerWork article p{
             width: 100%;
           font-size: 17px;
         }
-
           .left, .right {
             width: 100%;
-            /* flex: none; */
           }
           .left h1 {
             font-size: 2.5rem;
@@ -201,16 +138,8 @@
           }
           .bottom-nav {
             text-align: left;
-          }
-        
-        
+          }      
         }
-
-
-
-
-
-
   .pagination {
     font-family: Arial, sans-serif;
     margin: 40px;
@@ -232,7 +161,6 @@
     font-weight: 500;
     align-items: center;
     text-align: center;
-
   }
   .pagination span.page-number {
     font-weight: 700;
@@ -240,8 +168,21 @@
   .pagination button:focus {
     outline: none;
     text-decoration: underline;
-
   }
-  
-
-  
+  /* new style */
+  #workPage{
+    overflow-x: hidden;
+  }
+  #workPage ._tab{
+  border: 1px solid black !important;
+}
+#workPage ._tab a{
+  color: #000 !important;
+}
+@media(max-width: 400px){
+  /* work media style */
+    #workPage ._feat{
+        height: 500px;
+    }
+    
+}

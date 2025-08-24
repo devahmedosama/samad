@@ -1,21 +1,24 @@
+
 window.addEventListener("load", () => {
   ScrollTrigger.refresh();
 });
 
 // load function مسؤلة عن تحميل كود الجافاسكريبت بشكل صحيح 
 
-// Scroll bar
 let el = document.querySelector(".scroller");
 if (el) {
-  let height =
-    document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  // Set the width to 100% of the viewport width
+  el.style.width = '100vw';
 
+  // Optionally log scroll height and client height
   console.log(document.documentElement.scrollHeight);
   console.log(document.documentElement.clientHeight);
-  console.log(height);
 
   window.addEventListener("scroll", () => {
     const scrollTop = document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+    // Update width based on scroll position as a percentage
     el.style.width = `${(scrollTop / height) * 100}%`;
   });
 }
@@ -196,6 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const tabs = document.querySelectorAll(".tab");
 const contents = document.querySelectorAll(".content");
 
+
 tabs.forEach((tab) => {
   tab.addEventListener("mouseenter", () => {
     // Hide all content
@@ -206,7 +210,7 @@ tabs.forEach((tab) => {
     // Show corresponding content
     const targetContent = document.getElementById(tab.dataset.content);
     if (targetContent) {
-      targetContent.classList.add("active");
+      targetContent.classList.add("active");      
     }
   });
 });
@@ -521,6 +525,7 @@ if (typeof Swiper !== 'undefined') {
       hide: false,
       draggable: true,
     },
+
   });
 
   var swiperFastest = new Swiper('.swiper-fastest', {
@@ -578,6 +583,7 @@ gsap.fromTo(
       start: 'top center',
       end: '+=500',
       scrub: true,
+      pin: true,
     }
   }
 );
@@ -1113,25 +1119,10 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-
-// change color logo
-    // const colors = ['#ffffffc7','#bacb0ac7', '#000000c7', '#ffb165c7', '#fff',
-    //    '#000', '#ffffffc7', '#ffffffc7', '#ffffffc7', '#000', '#ffb165c7', '#ffb165c7', 
-    //    '#000', '#000', '#ffffffc7'];
-    // const navLogo = document.getElementById('navLogo');
-
-    // window.addEventListener('scroll', function() {
-    //     const scrollPosition = window.scrollY;
-    //     const colorIndex = Math.min(Math.floor(scrollPosition / 550), colors.length - 1);
-        
-    //     navLogo.style.color = colors[colorIndex];
-    // });
-
-
 // change logo img
   const logoImg = document.getElementById('logoimg');
         const originalSrc = 'assets/site/images/Logo Byte.svg';
-        const newSrc = 'assets/site/images/Logo Byte - Black.svg';
+        const newSrc = 'assets/site/images/logo-Byte-black-j.svg';
         
         window.addEventListener('scroll', () => {
             if (window.scrollY > 600) {
@@ -1173,56 +1164,6 @@ function addAnimation() {
 }
 
 
-// agency animation page  
 
-// Pin Section and videos section
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   gsap.registerPlugin(ScrollTrigger);
 
-//   // تأكد من وجود العناصر
-//   const pinSection = document.querySelector(".animate-black");
-//   const videosSection = document.querySelector(".animateBGBlack");
-
-//   if (pinSection && videosSection) {
-//     // Pin the animateScroll20 section and change background to black
-//     ScrollTrigger.create({
-//       trigger: pinSection,
-//       start: "top top",
-//       end: () => "+=" + videosSection.offsetHeight,
-//       pin: true,
-//       pinSpacing: false,
-//       scrub: true,
-//       onEnter: () => {
-//         pinSection.style.background = "#111";
-//         pinSection.style.zIndex = "10";
-//       },
-//       onLeave: () => {
-//         pinSection.style.background = "";
-//         pinSection.style.zIndex = "";
-//       },
-//       onEnterBack: () => {
-//         pinSection.style.background = "#111";
-//         pinSection.style.zIndex = "10";
-//       },
-//       onLeaveBack: () => {
-//         pinSection.style.background = "";
-//         pinSection.style.zIndex = "";
-//       },
-//     });
-
-//     // الفيديوهات تطلع فوق السيكشن المثبت
-//     gsap.to(videosSection, {
-//       y: () => -pinSection.offsetHeight,
-//       ease: "none",
-//       scrollTrigger: {
-//         trigger: pinSection,
-//         start: "top top",
-//         end: () => "+=" + videosSection.offsetHeight,
-//         scrub: true,
-//       },
-//     });
-//   } else {
-//     console.warn("لم يتم العثور على العناصر المطلوبة. تحقق من الكلاسات.");
-//   }
-// });

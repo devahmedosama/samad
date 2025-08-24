@@ -1,10 +1,10 @@
 @media (max-width: 1100px) {
  .featured-section {
-    width: 100%;
+    /* width: 100%; */
     /* background: red; */
 }
 .faet_box .faet_content_top{
-    display: inline-block;
+    /* display: inline-block; */
 }
 .faet_box .faet_content_top li{
     margin-bottom: 5px;
@@ -19,10 +19,10 @@
 
   @media (max-width: 997px) {
     .digital_box_right{
-        margin-top: 0em;
+        /* margin-top: 0em; */
     }
     .textSection p{
-        width: 100%;
+        /* width: 100%; */
     }
     .tenacity_section p {
     width: 100%;
@@ -55,22 +55,22 @@
 
 @media (max-width: 992px) {
         .header_section .hero-main-title {
-        font-size: 7vw;
+        /* font-size: 7vw; */
     }
     .main-title, .sub-title{
-        font-size: 3em;
+        /* font-size: 3em; */
     }
-    .featured-dis-none{
+    /* .featured-dis-none{
         display: none;
     }
     .swiper-mobile-section{
         display: block;
-    }
+    } */
     .project_section{
-        padding-bottom: 2em;
+        /* padding-bottom: 2em; */
     }
     ._textLine{
-        padding: 1em 0;
+        /* padding: 1em 0; */
     }
 .hiddenLGScrean{
     display: none;
@@ -81,10 +81,10 @@
      }
     
         .faet_box .faet_content_top {
-        display: flex;
+        /* display: flex; */
     }
     .swiper-mobile-section{
-        width: 94%;
+        /* width: 94%; */
         /* display: block; */
     }
 
@@ -100,15 +100,15 @@
 
 /* .textSection p */
 .textSection p{
-    font-size: inherit;
-    font-weight: normal;
+    /* font-size: inherit;
+    font-weight: normal; */
 }
 
  .fastestLGSccrean{
-    display: none;
+    /* display: none; */
 }
 .fastestsMobileSection{
-    display: block;
+    /* display: block; */
 } 
 
 .fastestsMobileSection .text-section {
@@ -152,7 +152,7 @@ font-size: 14px;
 
 
 .project_section .project_body{
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .priceSection p{
@@ -179,8 +179,8 @@ font-size: 14px;
         font-size: 3.5em;
     }
     .textSection p{
-        font-size: 19px !important;
-        width: auto !important;
+        /* font-size: 19px !important;
+        width: auto !important; */
     }
 
   .heroWrapper_section .webBox p{
@@ -191,8 +191,8 @@ font-size: 14px;
 }
   /* .animateScroll20 media */
   .big_wrapper_section .animateScroll20{
-    min-block-size: 60vh;
-    place-content: center
+    /* min-block-size: 60vh;
+    place-content: center */
     /* background: red; */
   }
   ._animateWrapper .animateScroll20{
@@ -203,7 +203,7 @@ font-size: 14px;
     height: 750px !important;
   }
   .animateScroll20 .tag-listScroull li {
-    font-size: 3.5em;
+    /* font-size: 3.5em; */
     color: #ffffff !important;
 }
 ._animateWrapper .tsome{
@@ -225,9 +225,9 @@ font-size: 14px;
         flex: 1 1 76px !important
     }
     .hero_lineHeader{
-        right: 16px;
+        /* right: 16px;
         top: -6px;
-        margin: 10px 0 5px 0;
+        margin: 10px 0 5px 0; */
     }
         .main-title, .sub-title {
         font-size: 1.8em;
@@ -254,7 +254,7 @@ font-size: 14px;
     /* font-size: 3.5em; */
 }
 .priceSection{
-    height: 35vh !important;
+    /* height: 35vh !important; */
 }
 ._textLine{
     width: 100%;
@@ -320,21 +320,6 @@ font-size: 14px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 670px){
  .slider .slide-track {
         width: calc(100% * 8);
@@ -347,5 +332,250 @@ font-size: 14px;
     align-items: center;
 }
 
+
+}
+
+/* new media */
+ @media (min-width: 1200px) and (max-width: 1400px){
+    .dropdown_tab {
+    /* justify-content: space-between;
+    align-items: center; */
+    width: 69lvw;
+    /* overflow: hidden; */
+}
+.tab-content img{
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.hero_lineHeader{
+    right: -2vw;
+}
+ }
+  @media (min-width: 992px) and (max-width: 1200px){
+    .hero_lineHeader{
+    right: -1vw;
+}
+.dropdown_tab {
+    width: 75dvw;
+}
+.tab-content img{
+    width: 100%;
+}
+.heroWrapper_section .webBox p{
+    max-width: 90%;
+}
+   #Homepage .featured-section .col-md-6 {
+        max-width: 33.333%;;
+    }
+
+._feat{
+    height: 500px;
+}
+.faet_box .faet_content_top{
+    flex-wrap: wrap;
+}
+.project_section .project_body{
+        height: 500px;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+  @media (min-width: 801px) and (max-width: 992px) {
+  #Homepage .featured-section .col-md-6 {
+        /* flex: 0 0 auto; */
+        width: 33.333%;
+    }
+
+._feat{
+    height: 500px;
+}
+.faet_box .faet_content_top{
+    /* padding: 20px 3px 0px 3px; */
+    flex-wrap: wrap;
+}
+    
+   .digital_section .col-md-12 {
+        width: 50%;
+    }
+    .project_section .col-md-12 {
+        width: 50%;
+    }
+    .project_section .project_body{
+        height: 500px;
+        margin-bottom: 20px;
+    }
+}
+  @media (max-width: 947px){
+    .heroWrapper_section .webBox p{
+        width: 100%;
+    }
+     #Homepage .featured-section{
+    display: none;
+    }
+   
+    #Homepage .swiper-mobile-section{
+        display: block;
+        max-width: 95%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+      #Homepage .wrapper-section .container{
+        margin-top: 60px;
+        /* margin-bottom: 40px; */
+    }
+
+    #Homepage .featTextMobile P{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+     #Homepage .featTextMobile{
+        display: flex;
+    justify-content: space-between;
+    padding-left: 13px;
+    padding-right: 13px;
+    margin-top: 40px;
+    }
+
+
+    /*  */
+     .project_section .project_body{
+        height: 500px;
+        margin-bottom: 20px;
+    }
+    /* approch page media */
+    ._apprTyping{
+        text-align: center;
+        font-size: 7vw;
+    }
+    .mainWrapperAcord .secAcord1 .accordion-item{
+    border-color: #202020 transparent transparent transparent;
+}
+.mainWrapperAcord2  .secAcord1 .accordion-item{
+    border-color: #e7e7e7 transparent transparent transparent;
+}
+    .approchStickyLeft{
+        text-align: center;
+        padding: 15px 0 30px 0;
+    }
+    .approchStickyLeft h1{
+        padding-bottom: 10px;
+    }
+     .approchStickyLeft .hoverList{
+        text-align: center;
+        margin: auto;
+    }
+    
+    /* ./approch page media */
+
+    /* work page media */
+     /* #workPage .featured-section .col-md-6 {
+        width: 50%;
+        background: yellow;
+    } */
+    /* ./ work page media */
+
+  }
+@media (min-width: 768px) and (max-width: 992px){
+    .hero_lineHeader{
+    right: auto;
+}
+
+  }
+
+  @media (max-width: 801px){
+    .digital_box_right {
+        margin-top: 0em;
+    }
+        .fastestLGSccrean {
+        display: none;
+    }
+    .fastestsMobileSection{
+    display: block;
+} 
+.textSection p{
+    width: 90% !important;
+    font-size: 18px !important;
+}
+.textList {
+  width: 98%;
+}
+
+
+
+
+  }
+
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+.animateScroll20{
+        min-block-size: 70vw !important;
+        /* background: rgb(255, 247, 0); */
+  }
+      .priceSection {
+        /* height: 60vw !important; */
+        /* background: rgb(43, 255, 0); */
+        /* height: 50vh; */
+    } 
+      .priceSection{
+        height: 70vw !important;
+        /* background: rgb(0, 68, 255); */
+      }
+      footer{
+        height: 70svh;
+        display: inherit;
+        /* justify-content: center; */
+        /* padding-bottom: 3em; */
+      }
+      .footerItemTop {
+    margin-bottom: 0;
+}
+    .footerItemCenter {
+        /* display: inherit; */
+        text-align: center;
+        padding-bottom: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      
+}
+/* mobile media */
+@media (max-width: 400px){
+    #Homepage .wrapper-section .container{
+        margin-top: 60px;
+    }
+    #Homepage .featTextMobile P{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+     #Homepage .featTextMobile{
+        display: flex;
+    justify-content: space-between;
+    padding-left: 13px;
+    padding-right: 13px;
+    margin-top: 40px;
+    }
+     #Homepage .price-title .word{
+        font-size: 10svw;
+     }
+     #Homepage  .approach-title .word{
+        font-size: 10svw;
+     }
+     #Homepage .textSection{
+        padding-top: 10svw;
+        padding-bottom: 5svw;
+     }
+     /* agynsy page mobil media */
+        #agyncyPage .text-egy p {
+        text-align: left !important;
+    }
+   
 
 }

@@ -15,7 +15,7 @@
 @endsection
 @extends('site.content.layout')
 @section('content')
-   <body class="">
+   <body class="" id="approachPage">
       <!-- scroll bar -->
       <div class="header-agency">
         @include('site.content.menu',['black'=>'black'])

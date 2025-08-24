@@ -1,6 +1,6 @@
 @extends('site.content.layout')
 @section('content')
-   <body>
+   <body id="Homepage">
     <header>
       <div class="back_video">
         <div class="headergradientBg"></div>

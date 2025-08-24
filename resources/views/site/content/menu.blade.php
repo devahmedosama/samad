@@ -132,7 +132,7 @@
       <li><span class="menu-num">01</span> <span class="menu-title"><a href="{{ URL::to('/') }}">Home</a></span></li>
       <li><span class="menu-num">02</span> <span class="menu-title"><a href="{{ URL::to('our-agency') }}">Agency</a></span></li>
       <li><span class="menu-num">03</span> <span class="menu-title"><a href="{{ URL::to('work') }}">Work</a></span></li>
-      <li><span class="menu-num">01</span> <span class="menu-title"><a href="{{ URL::to('approach') }}">Approach</a></span></li>
+      <li><span class="menu-num">04</span> <span class="menu-title"><a href="{{ URL::to('approach') }}">Approach</a></span></li>
      
       <!-- <li><span class="menu-num">01</span> <span class="menu-title">Agency</span></li>
         <li><span class="menu-num">02</span> <span class="menu-title">Expertise</span></li>

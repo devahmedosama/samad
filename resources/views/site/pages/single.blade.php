@@ -23,7 +23,7 @@
 @endsection
 @extends('site.content.layout')
 @section('content')
-  <body class="">
+  <body class="" id="interaudiPage">
 
     <div class="header-agency">
       @include('site.content.menu')

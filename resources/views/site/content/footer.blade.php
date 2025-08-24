@@ -65,32 +65,29 @@
             <div class="ppf">
               <ul class="fourBtn">
                 <li class="_fli">
-                  <a href="#" class="fhow">Some Industries We Serve</a>
-                  <a href="#" class="fhidd">Some Industries We Serve</a>
+                  <a href="{{ URL::to('work') }}" class="fhow">Our work</a>
+                  <a href="{{ URL::to('work') }}" class="fhidd">Our work</a>
                 </li>
                 <li class="_fli">
-                  <a href="#" class="fhow">Some Markets We Serve</a>
-                  <a href="#" class="fhidd">Some Markets We Serve</a>
+                  <a href="{{ URL::to('our-agency') }}" class="fhow">Our agency</a>
+                  <a href="{{ URL::to('our-agency') }}" class="fhidd">Our agency</a>
                 </li>
               </ul>
 
               <ul class="fItemBtn">
                 <li class="_fli">
-                  <a href="#" class="fhow">Financial Services</a>
-                  <a href="#" class="fhidd">Financial Services</a>
+                  <a href="#" class="fhow">Digital marketing</a>
+                  <a href="#" class="fhidd">Digital marketing</a>
                 </li>
                 <li class="_fli">
-                  <a href="#" class="fhow">Banking</a>
-                  <a href="#" class="fhidd">Banking</a>
+                  <a href="#" class="fhow">Brand Identity</a>
+                  <a href="#" class="fhidd">Brand Identity</a>
                 </li>
                 <li class="_fli">
-                  <a href="#" class="fhow">Commercial Real Estate</a>
-                  <a href="#" class="fhidd">Commercial Real Estate</a>
+                  <a href="#" class="fhow">Digital Strategy</a>
+                  <a href="#" class="fhidd">Digital Strategy</a>
                 </li>
-                <li class="_fli">
-                  <a href="#" class="fhow">Franchise</a>
-                  <a href="#" class="fhidd">Franchise</a>
-                </li>
+               
               </ul>
             </div>
           </div>

@@ -4,7 +4,7 @@
 @endsection
 @extends('site.content.layout')
 @section('content')
-  <body class="relative">
+  <body class="relative" id="workPage">
 
     <div class="header-agency">
       @include('site.content.menu')

@@ -1,4 +1,3 @@
-
 // button container
 const buttons = document.querySelectorAll('.btnFixedBar');
 
@@ -14,13 +13,11 @@ buttons.forEach(button => {
 });
 
 ///////////////////////
-
-  window.addEventListener('scroll', function() {
+ window.addEventListener('scroll', function() {
         const scrollY = window.scrollY; // مقدار التمرير العمودي
         const logoIImg = document.getElementById('appLogo');
-
-        const imglSrc = 'assets/site/images/Logo Byte.svg';
-        const newSsrc = 'assets/site/images/Logo Byte - Black.svg';
+         const imglSrc = 'assets/images/Logo-Byte-white-j.svg';
+        const newSsrc = 'assets/images/logo-Byte-black-j.svg';
         
 
         if (scrollY >= 300 && scrollY < 2000) {
@@ -40,6 +37,7 @@ buttons.forEach(button => {
             logoIImg.src = newSsrc;
         }
     });
+
 
 
 

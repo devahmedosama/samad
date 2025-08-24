@@ -1,10 +1,10 @@
 /* globale class */
-a{
+/* a{
     outline: none;
 }
 button{
     outline: none;
-}
+} */
 .text-bold-1{
     font-weight: 600;
     --tw-leading: 150%;
@@ -26,7 +26,7 @@ button{
     margin-top: 10px;
 }
 .video-box{
-    width: 100%;
+    max-width: 100%;
     position: relative;
     overflow: hidden;
     margin-top: 40px;
@@ -36,7 +36,7 @@ button{
     height: 100%;
 }
 .flex-style{
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     position: relative;
     align-items: end;
@@ -70,7 +70,8 @@ button{
 }
 .fa-100px {
     font-weight: normal;
-    font-size: 92px;
+    /* font-size: 92px; */
+
 }
 .backgroundBlue{
     background: linear-gradient(to bottom, #00aaff, #6faff4);
@@ -114,7 +115,8 @@ button{
     width: 100vw;
 }
 .w-100 {
-    width: 100% !important;
+    /* width: 100% !important; */
+    width: auto !important;
 }
 .floatR{
     float: right;
@@ -366,8 +368,10 @@ button{
 }
 
 .mainWrapper{
-    width: 100%;
+    /* width: 100%; */
     overflow: hidden;
+    /*  */
+    max-width: 100%;
 }
 ._animateWrapper{
     width: 100%;
@@ -378,9 +382,15 @@ button{
 }
 /* am new */
 #v0 {
-    top: 50%;
+    /* top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+    /*  */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: -webkit-fill-available;
 }
 
 /*  */
@@ -391,8 +401,10 @@ button{
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    width: 90%;
+    /* width: 90%; */
     margin: auto;
+    /*  */
+    max-width: 90%;
 }
 
 .b3{
@@ -403,13 +415,17 @@ width: 200px;
     overflow: hidden;
 }
 .topAgencyHeader{
-    width: 100%;
+    /* width: 100%; */
     overflow: hidden;
     height: 88vh;
     z-index: 2;
+    /*  */
+    max-width: 100%;
+    background: black;
+    margin-top: -10px;
 }
 .agency-section{
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     margin: auto;
     background: #dedede !important;
@@ -419,7 +435,7 @@ width: 200px;
 }
 .agency-section2{
     background: #f4f4f4;
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     position: relative;
     border-radius: 10px;
@@ -429,7 +445,7 @@ width: 200px;
     overflow: hidden;
 }
 .agency-section-image{
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     position: absolute;
     top: 0;
@@ -438,6 +454,8 @@ width: 200px;
     left: 0;
     z-index: 0;
     margin: auto;
+    /*  */
+    max-width: 100%;
 }
 .agency-section-image img{
     width: 100%;
@@ -499,6 +517,7 @@ padding-bottom: 30px;
     margin-bottom: 1em;
         --tw-tracking: -.04em;
     letter-spacing: -.04em;
+    overflow: hidden;
 }
 .agency-section .agency-header-title span{
     font-weight: normal;
@@ -548,12 +567,13 @@ width: 67%;
 }
 /* partnerContant style */
 .partners-agency{
-    width: 100%;
+    /* width: 100%; */
      background: #fff;
     padding: 46px 20px ;
     position: relative;
     overflow: hidden;
-
+    /*  */
+    max-width: 100%;
 }
 .partnerContant{
     margin-top: 40px;
@@ -626,11 +646,13 @@ width: 67%;
 
 /*  */
 .slideshowagencylogo{
-    width: 100%;
+    /* width: 100%; */
     margin: auto;
     position: relative;
     overflow: hidden;
     padding: 10px;
+    /*  */
+    max-width: 100%;
 }
 
 .slideshowagencylogo .grid-item-logo {
@@ -688,4 +710,91 @@ width: 67%;
 /* am pin-spacer animate class add 17 / 7*/
 .pin-spacer{
     overflow: hidden !important;
+}
+
+/* new style */
+#agyncyPage{
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+#agyncyPage ._tab{
+    border: 1px solid black;
+}
+#agyncyPage ._tab{
+    color: black;
+}
+
+#agyncyPage .big_wrapper_section .animateScroll20{
+    place-content: space-between;
+    padding-top: inherit;
+    max-width: 100%;
+}
+#agyncyPage ._animateWrapper .animateScroll20{
+    place-content: center;
+    min-block-size: 100vh;
+    max-width: 100%;
+    /* padding-top: inherit; */
+}
+
+
+@media (max-width: 1100px) {
+
+    .pr-11em {
+    padding-right: 2em !important ;
+    }
+    .bpTw{
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width: 992px) {
+    .agency-section .agency-p-title {
+    font-size: 18px;
+    width: 91%;
+}
+.agency-section .agency-header-title{
+    padding-bottom: 12px;
+}
+.agency-section .agency-header-title span{
+    display: block;
+}
+.partnerContant ._bigtext{
+    text-align: center;
+}
+#agyncyPage .partnerContant .hoverList{
+    margin: auto;
+    margin-bottom: 4vw !important;
+}
+#agyncyPage .partnerContant .agency-video p{
+    text-align: center;
+}
+#agyncyPage  .precision_section ._itemOur ._paragraph  {
+        max-width: 100%;
+    }
+#agyncyPage  .precision_section ._itemOur ._paragraph p {
+        width: 100%;
+        max-width: 100%;
+        font-size: 18px;
+        text-align: left;
+        /* display: block; */
+    }
+    #agyncyPage .swiper-mobile-section{
+        display: block;
+    }
+    #agyncyPage .swiper-mobile-section{
+        width: 300px;
+    }
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+   #agyncyPage .animateScroll20 {
+        min-block-size: 60svw;
+    }
+    #agyncyPage ._animateWrapper .animateScroll20 {
+    place-content: end;
+    }
 }
